@@ -1,0 +1,8 @@
+[% META title = 'Add User' -%]
+<form method="post" action="[% c.uri_for('/')%]pid/[% rec.id %]/edit">
+<table>
+<tr><td>Title:</td><td><input type="text"name="title" value="[% rec.title %]"></input></td></tr>
+<tr><td>Body:</td><td><textarea name="body">[% rec.body %]</textarea></td></tr>
+</table>
+<input type="submit" name="Submit" value="Submit">
+</form>

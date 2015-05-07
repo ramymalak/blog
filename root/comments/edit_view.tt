@@ -1,0 +1,7 @@
+[% META title = 'Edit Comment' -%]
+<form method="post" action="[% c.uri_for('/')%]cid/[% rec.id %]/edit">
+<table>
+<tr><td>Body:</td><td><textarea name="body">[% rec.body %]</textarea></td></tr>
+</table>
+<input type="submit" name="Submit" value="Submit">
+</form>
